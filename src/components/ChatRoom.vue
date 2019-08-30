@@ -7,8 +7,8 @@
       <div class="side">
           <img class="tumbPic" :src="image(this.tumb)"/>
           <span>{{this.name}}</span>
-          <span class="someText">星期一, 天氣晴, 大家安安</span>
-          <button>編輯</button>
+          <span class="someText">點別人的頭像偷偷聊(未完)</span>
+          <button @click="leave()">離開</button>
           <div class="mode mode-activ">
               <span>大廳<br />模式</span>
           </div>
@@ -131,6 +131,11 @@ export default {
         this.privatechat_img = src;
         this.showModal = true;
       }
+    },
+    leave() {
+      this.$router.push({
+          name: 'home',
+        })
     }
   },
   created() {
@@ -157,13 +162,13 @@ export default {
 }
 .nav {
   width: 100%;
-  height: 70px;
+  height: 60px;
   background: #524A4A 0% 0% no-repeat padding-box;
   text-align: left;
 }
 .nav .title {
   text-align: left;
-  padding: 20px 50px;
+  padding: 15px 50px;
   font-size: 20px;
   color: #A59696;
   letter-spacing: 0.48px;
@@ -187,7 +192,7 @@ export default {
 }
 
 .side {
-    width:300px;
+    width:25%;
     background-color:#766B6B;
 }
 .child {
@@ -196,16 +201,13 @@ export default {
     height:100%;
 }
 
-.scrollable {
-     overflow-y:auto;
-}
 .side span{
     display: block;
     color:white;
 }
 .mode{
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     background-color: #524A4A;
     display: flex;
@@ -230,6 +232,7 @@ export default {
     margin:5px;
     border-radius: 10px;
     cursor: pointer;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .tumbPic, .someText {
   padding: 20px;

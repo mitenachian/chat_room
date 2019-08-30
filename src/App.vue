@@ -19,6 +19,7 @@ export default {
   color: #2c3e50;
   height: 100%;
   position: relative;
+  min-height: 800px;
 }
 body {
   margin:0;
@@ -27,5 +28,6 @@ body {
 }
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 </style>
