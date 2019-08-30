@@ -89,7 +89,7 @@ export default {
   },
   methods: {
     image(item) {
-      return require(`../assets/s${item}`);
+      return require(`../assets/tumb/${item}`);
     },
     submit() {
       if (this.text != "") {
