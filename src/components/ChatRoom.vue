@@ -29,7 +29,7 @@
                     <img :src="image(item.src)" width="35px" height="35px" class="chatimg" />
                     <span>{{item.name}}</span>
                   </div>
-                  <div :class="`chatlog${item.team}`">
+                  <div :class="{'chatloghost': item.name === user_name , 'chatlogguest': item.name !== user_name}">
                     <span>{{item.label}}</span>
                   </div>
                   <div class="chattime">
@@ -61,8 +61,8 @@
             <h2>確定要與 <span style="color:#DDA27C; font-size:30px;">{{privatechat_name}}</span> 開啟一對一聊天</h2>
             <img class="tumbPic" :src="image(privatechat_img)"/>
             <div>
-              <div class="buttonGO">進入聊天</div>
-              <div class="buttonCancel">取消按錯</div>
+              <div class="buttonGO" @click="showModal=false">進入聊天</div>
+              <div class="buttonCancel" @click="showModal=false">取消按錯</div>
             </div>
           </div>
         </div>
