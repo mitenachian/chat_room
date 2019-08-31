@@ -22,10 +22,10 @@
         <div class="buttonBox">
           <!--點選切換 sidebar2中的貓狗列表-->
           <div class="bottonOutline">
-            <button class="button button1" @click.prevent="changeView('dog')" :class="{'selectClass': view === 'dog' }"><h2>狗  狗</h2></button>
+            <button class="button button1" @click.prevent="changeView('dog')" :class="{'selectClass': view === 'dog' }"><span>狗  狗</span></button>
           </div>
           <div class="bottonOutline">
-            <button class="button button1" @click.prevent="changeView('cat')" :class="{'selectClass': view === 'cat' }"><h2>貓  貓</h2></button>
+            <button class="button button1" @click.prevent="changeView('cat')" :class="{'selectClass': view === 'cat' }"><span>貓  貓</span></button>
           </div>
       </div>
       </div>
@@ -130,8 +130,8 @@ h3 {
   font-family: 'Noto Sans TC', sans-serif;
 }
 .home {
-width: 980px;
-height: 700px;
+width: 800px;
+height: 600px;
 background: #524A4A 0% 0% no-repeat padding-box;
 box-shadow: 0px 3px 6px #413737;
 border-radius: 21px;
@@ -173,8 +173,8 @@ margin-top: 100px;
 .button {
   cursor: pointer;
   margin:10px;
-  width: 164px;
-  height: 63px;
+  width: 120px;
+  height: 60px;
   background: #645B5B 0% 0% no-repeat padding-box;
   border: 2px solid #FCAA72;
   border-radius: 9px;
@@ -185,6 +185,10 @@ margin-top: 100px;
   border: 2px solid #645B5B;
   
 }
+.button span {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 18px;
+}
 .button1:hover, .selectClass {
   background-color: rgb(153, 128, 128) 0% 0% no-repeat padding-box;
   color: #FCAA72; 
@@ -194,8 +198,8 @@ margin-top: 100px;
   padding: 20px;
 }
 .imgBox img{
-  width:141px;
-  height:239px;
+  width:130px;
+  height:220px;
 }
 .inputBox {
   padding:20px;
