@@ -1,5 +1,5 @@
 # chat_room
-
+[DEMO-進入聊天室](https://mitenachian.github.io/chat_room/dist/#/)
 > A Vue.js project
 
 ## Build Setup
