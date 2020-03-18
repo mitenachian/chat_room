@@ -1,5 +1,7 @@
 # chat_room
+練習Real time chatRoom, Firebase, THE F2E 2ND
 [DEMO-進入聊天室](https://mitenachian.github.io/chat_room/dist/#/)
+![image](https://github.com/mitenachian/chat_room/blob/master/real-time-chat.jpg?raw=true)
 > A Vue.js project
 
 ## Build Setup
